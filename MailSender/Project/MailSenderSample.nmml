@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<app title="MailSender Sample" file="MailSenderSample" main="com.emibap.mailsendersample.MailSenderSample" package="com.emibap.mailsendersample" version="1.0.0" icon="Assets/nme.svg" company="Emiliano Angelini" />
+	
+	<window width="640" height="960" fps="30" orientation="portrait" resizable="true" />
+ 	
+	<set name="BUILD_DIR" value="Export" />
+	
+	<classpath name="Source" />
+	
+	<haxelib name="nme" />
+	
+	<assets path="Assets" rename="assets" include="*" exclude="nme.svg" />
+	
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<ndll name="nme" haxelib="nme" />
+	
+	<include path="../Extension" />
+	
+	<setenv name="HXCPP_LOAD_DEBUG" value="1" />
+	
+	<!-- This is a required iOS framework -->
+	<dependency name="MessageUI.framework" if="ios" />
+	
+</project>

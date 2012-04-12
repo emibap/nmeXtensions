@@ -1,0 +1,271 @@
+TMailSenderSample
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist"
+cProcessInfoPlistFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/Info.plist" MailSenderSample-Info.plist
+cCpResource assets "build/Release-iphoneos/MailSender Sample.app/assets"
+cCompileC build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.o /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp normal armv6 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample" normal armv6
+cGenerateDSYMFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app.dSYM" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample"
+cProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision"
+cProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision"
+cTouch "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent"
+cCodeSign "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"
+cValidate "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
+c000000004F57EC450000000000000110
+t1331162181
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+c000000004F63925D00000000000001A7
+t1331925597
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+c000000004F63925D00000000000001E5
+t1331925597
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004F63925E000000000015B230
+t1331925598
+s1421872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004F63925F00000000005C33D0
+t1331925599
+s6042576
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004F63925E000000000007E4A0
+t1331925598
+s517280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F63925F00000000003AE430
+t1331925599
+s3859504
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F639260000000000052C940
+t1331925600
+s5425472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004F63925F00000000000B0160
+t1331925599
+s721248
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004F6392600000000000023A10
+t1331925600
+s145936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004F6392600000000000018700
+t1331925600
+s100096
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004F6392600000000000175AA0
+t1331925600
+s1530528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F6392610000000000798EA0
+t1331925601
+s7966368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/stdio.h
+c000000004F6392640000000000004763
+t1331925604
+s18275
+
+N/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision
+c000000004F845FB30000000000001E38
+t1334075315
+s7736
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp
+c000000004F84EE340000000000000451
+t1334111796
+s1105
+i<stdio.h>
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/assets
+c000000004F84EE1A0000000000000044
+t1334111770
+s68
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/MailSender Sample.LinkFileList
+c000000004F84EE3400000000000000B3
+t1334111796
+s179
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.o
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app.dSYM
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/Info.plist
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/PkgInfo
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/assets
+t2
+s0
+
+N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision
+t2
+s0
+
+NMailSenderSample-Info.plist
+c000000004F84EE1900000000000005A0
+t1334111769
+s1440
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1d5ae8b42535b541^df53e9b42535b541^-82"warning: all apps should include an armv7 architecture (current ARCHS = "armv6").1(21%IDEActivityLogMessage2@81"Warning: all apps should include an armv7 architecture (current ARCHS = "armv6").-355804596#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"5EEB9380-4808-4333-88C8-49BC43635C96-
+
+CCodeSign "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"
+s355804598.166412
+e355804598.909776
+r1
+xCodeSign
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"CodeSign "build/Release-iphoneos/MailSender Sample.app"4bae2ab62535b541^efe7e8b62535b541^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender%20Sample.app/0000000000000000^1062"CodeSign "build/Release-iphoneos/MailSender Sample.app"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /usr/bin/codesign --force --sign 78423b5abdc809a53ceaef3fdd692ac7f511ed2e "--resource-rules=/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist" --entitlements "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"36"5A42FBCD-EC2F-4B2E-AC4F-685C002E7528-
+
+CCompileC build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.o /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp normal armv6 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s355804596.939768
+e355804597.063817
+r1
+xCompileC
+xbuild/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.o
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp
+xnormal
+xarmv6
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp79adf0b42535b541^2e5610b52535b541^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp0000000000000000^3484"CompileC build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.o Classes/Main.cpp normal armv6 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv6 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -miphoneos-version-min=3.2 -iquote "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample-generated-files.hmap" "-I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample-own-target-headers.hmap" "-I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample-all-target-headers.hmap" -iquote "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample-project-headers.hmap" -I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/include -I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/DerivedSources/armv6 -I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/DerivedSources -F/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -MMD -MT dependencies -MF /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.d --serialize-diagnostics /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.dia -c /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/Classes/Main.cpp -o /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/Main.o36"E0B86F8C-CB96-4E6F-979C-6EB6780FEB65-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist"
+s355804596.914624
+e355804596.918069
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+xbuild/Release-iphoneos/MailSender Sample.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist7d3eeab42535b541^4f06ebb42535b541^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender%20Sample.app/ResourceRules.plist000000000080d041^994"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"36"1DCD73DF-D63A-4150-AA74-E63F866FFBBE-
+
+CCpResource assets "build/Release-iphoneos/MailSender Sample.app/assets"
+s355804596.928079
+e355804596.930774
+r1
+xCpResource
+xassets
+xbuild/Release-iphoneos/MailSender Sample.app/assets
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Release-iphoneos/MailSender Sample.app/assetscaa5edb42535b541^1347eeb42535b541^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender%20Sample.app/assets000000000080d041^833"CpResource assets "build/Release-iphoneos/MailSender Sample.app/assets"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/assets "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"36"F27DEC25-AF53-4BCB-9936-FC1EAE7350C4-
+
+CGenerateDSYMFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app.dSYM" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample"
+s355804597.817202
+e355804597.957229
+r1
+xGenerateDSYMFile
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app.dSYM
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"Generating /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app.dSYM6f46d1b52535b541^6d1cf5b52535b541^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender%20Sample.app.dSYM000000000080d041^787"GenerateDSYMFile "build/Release-iphoneos/MailSender Sample.app.dSYM" "build/Release-iphoneos/MailSender Sample.app/MailSender Sample"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample" -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app.dSYM"36"B61A49F6-6302-4ADE-8D53-6A76FFF3688A-
+
+CLd "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample" normal armv6
+s355804597.071041
+e355804597.809366
+r1
+xLd
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample
+xnormal
+xarmv6
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Link /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample306312b52535b541^4832cfb52535b541^---0#0#0#--1663"Ld "build/Release-iphoneos/MailSender Sample.app/MailSender Sample" normal armv6    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos -L/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/lib/armv6 -F/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos -filelist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/Objects-normal/armv6/MailSender Sample.LinkFileList" -dead_strip -lstd -lregexp -lzlib -lnme -lmailsender -lcurl_ssl -lpng -ljpeg -lz -lApplicationMain -miphoneos-version-min=3.2 -framework UIKit -framework OpenAL -framework OpenGLES -framework QuartzCore -framework CoreAudio -framework CoreGraphics -framework AudioToolbox -framework AVFoundation -framework Foundation -framework MessageUI -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/MailSender Sample"36"0266CCAE-3504-467A-9911-2883D68A16BA-
+
+CProcessInfoPlistFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/Info.plist" MailSenderSample-Info.plist
+s355804596.914626
+e355804596.919258
+r1
+xProcessInfoPlistFile
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/Info.plist
+xMailSenderSample-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Process MailSenderSample-Info.plist4b3eeab42535b541^a054ebb42535b541^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/MailSenderSample-Info.plist0000000000000000^984"ProcessInfoPlistFile "build/Release-iphoneos/MailSender Sample.app/Info.plist" MailSenderSample-Info.plist    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-infoPlistUtility MailSenderSample-Info.plist -genpkginfo "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/ResourceRules.plist" -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/Info.plist"36"48742B53-A238-4FC2-A123-D2ADAD01D9D8-
+
+CProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision"
+s355804598.065800
+e355804598.129938
+r1
+xProcessProductPackaging
+x/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection217"ProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision"a85411b62535b541^af4321b62535b541^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender%20Sample.app/embedded.mobileprovision0000000000000000^838"ProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-productPackagingUtility "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app/embedded.mobileprovision"36"913F8123-986F-465D-8750-AE4A4C61F1A5-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent"
+s355804598.153685
+e355804598.157444
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection239"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent"be6c27b62535b541^984d28b62535b541^---0#0#0#-19%DVTDocumentLocation2@192"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender%20Sample.xcent000000000080d041^908"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist -entitlements -format xml -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/MailSenderSample.build/Release-iphoneos/MailSenderSample.build/MailSender Sample.xcent"36"71734A5B-6C17-431E-A6D7-B3BAD0901C5D-
+
+CTouch "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"
+s355804598.139006
+e355804598.144696
+r1
+xTouch
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Touch /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app35b223b62535b541^aa0a25b62535b541^---0#0#0#--509"Touch "build/Release-iphoneos/MailSender Sample.app"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /usr/bin/touch -c "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"36"7FAE97FE-4B76-4F6E-A192-7145C91668DC-
+
+CValidate "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"
+s355804598.918742
+e355804602.383455
+r1
+xValidate
+x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app
+owarning: Icon specified in the Info.plist not found under the top level app wrapper: Icon.png (-19007)
+oUnable to validate your application. - (null)
+o
+owarning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)
+oUnable to validate your application. - (null)
+o
+owarning: iPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72 (-19013)
+oUnable to validate your application. - (null)
+o
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Validate "build/Release-iphoneos/MailSender Sample.app"a647ebb62535b541^c72962ba2535b541^-656"warning: Icon specified in the Info.plist not found under the top level app wrapper: Icon.png (-19007)Unable to validate your application. - (null)warning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)Unable to validate your application. - (null)warning: iPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72 (-19013)Unable to validate your application. - (null)3(21%IDEActivityLogMessage2@94" Icon specified in the Info.plist not found under the top level app wrapper: Icon.png (-19007)84"Icon specified in the Info.plist not found under the top level app wrapper: Icon.png355804602#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@202" iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)192"IPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57355804602#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@192" iPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72 (-19013)182"IPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72355804602#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@145"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender%20Sample.app/0000000000000000^653"Validate "build/Release-iphoneos/MailSender Sample.app"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/MailSender/Project/Export/iphone/build/Release-iphoneos/MailSender Sample.app"36"2A03E06F-1B2C-4B8F-8CB4-2FEEE4669B93-
+

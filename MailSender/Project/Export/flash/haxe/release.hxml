@@ -1,0 +1,11 @@
+-main ApplicationMain 
+-D nme_install_tool
+-cp Source
+-lib nme
+-cp ./../Extension
+-cp ./../Extension/
+-D web
+-swf-version 10
+-swf9 Export/flash/bin/MailSenderSample.swf
+-swf-header 640:960:30:ffffff
+-cp Export/flash/haxe
