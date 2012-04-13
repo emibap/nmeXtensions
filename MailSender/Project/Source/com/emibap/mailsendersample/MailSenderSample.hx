@@ -23,7 +23,6 @@ class MailSenderSample extends Sprite {
 	public function new () {
 		
 		super ();
-		
 		initialize ();
 		
 	}

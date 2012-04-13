@@ -1,9 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Android" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Source/com/emibap/mailsendersample/MailSenderSample.hx">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Flash" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Extension/project/Build.xml">
     <Files>
-      <File FileName="Source/com/emibap/mailsendersample/MailSenderSample.hx" Line="74" Column="2" />
       <File FileName="MailSenderSample.nmml" Line="28" Column="11" />
+      <File FileName="../Extension/MailSender.hx" Line="19" Column="125" />
+      <File FileName="../Extension/project/common/ExternalInterface.cpp" Line="1" Column="1" />
+      <File FileName="../Extension/project/include/MailSender.h" Line="1" Column="1" />
+      <File FileName="../Extension/project/iphone/MailComposer.m" Line="1" Column="1" />
+      <File FileName="../Extension/project/iphone/MailSender.mm" Line="1" Column="1" />
+      <File FileName="../Extension/project/Build.xml" Line="7" Column="44" />
+      <File FileName="../../../nmex/project/Build.xml" Line="1" Column="1" />
+      <File FileName="../../../SophiesDrawingsH/SophiesDrawings.nmml" Line="35" Column="65" />
+      <File FileName="../../../SophiesDrawingsH/Source/Main.hx" Line="143" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
