@@ -9,7 +9,7 @@
 
 #include <hx/CFFI.h>
 #include "MailSender.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 using namespace mailSender;
 //#ifdef IPHONE
