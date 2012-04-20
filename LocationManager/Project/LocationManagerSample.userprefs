@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Flash" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../nmex/project/common/ExternalInterface.cpp">
+    <Files>
+      <File FileName="../../../nmex/include.nmml" Line="1" Column="1" />
+      <File FileName="../../../nmex/project/Build.xml" Line="15" Column="44" />
+      <File FileName="../Extension/project/Build.xml" Line="22" Column="37" />
+      <File FileName="../../../nmex/project/common/ExternalInterface.cpp" Line="211" Column="17" />
+      <File FileName="../Extension/project/common/ExternalInterface.cpp" Line="12" Column="3" />
+      <File FileName="../../../nmex/project/include/UI.h" Line="9" Column="25" />
+      <File FileName="../../../nmex/project/iphone/iRate.mm" Line="1" Column="1" />
+      <File FileName="../../../nmex/project/iphone/UI.mm" Line="10" Column="25" />
+      <File FileName="../../../nmex/nmex/NativeUI.hx" Line="36" Column="97" />
+      <File FileName="../../../SophiesDrawingsH/SophiesDrawings.nmml" Line="36" Column="37" />
+      <File FileName="../../../SophiesDrawingsH/Source/Main.hx" Line="143" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
