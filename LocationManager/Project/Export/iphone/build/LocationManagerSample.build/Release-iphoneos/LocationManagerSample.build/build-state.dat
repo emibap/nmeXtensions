@@ -1,271 +1,0 @@
-TLocationManagerSample
-v5
-r1
-cCheck dependencies
-cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist"
-cProcessInfoPlistFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/Info.plist" LocationManagerSample-Info.plist
-cCpResource assets "build/Release-iphoneos/LocationManager Sample.app/assets"
-cCompileC build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.o /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp normal armv6 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample" normal armv6
-cGenerateDSYMFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app.dSYM" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample"
-cProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision"
-cProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision"
-cTouch "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"
-cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent"
-cCodeSign "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"
-cValidate "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
-c000000004F57EC450000000000000110
-t1331162181
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
-c000000004F63925D00000000000001A7
-t1331925597
-s423
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
-c000000004F63925D00000000000001E5
-t1331925597
-s485
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c000000004F63925E000000000015B230
-t1331925598
-s1421872
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004F63925F00000000005C33D0
-t1331925599
-s6042576
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
-c000000004F63925E000000000007E4A0
-t1331925598
-s517280
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004F63925F00000000003AE430
-t1331925599
-s3859504
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000004F63925F000000000007C770
-t1331925599
-s509808
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004F639260000000000052C940
-t1331925600
-s5425472
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
-c000000004F6392600000000000023A10
-t1331925600
-s145936
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c000000004F6392600000000000018700
-t1331925600
-s100096
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004F6392600000000000175AA0
-t1331925600
-s1530528
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004F6392610000000000798EA0
-t1331925601
-s7966368
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/stdio.h
-c000000004F6392640000000000004763
-t1331925604
-s18275
-
-N/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision
-c000000004F845FB30000000000001E38
-t1334075315
-s7736
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp
-c000000004F9082C6000000000000045B
-t1334870726
-s1115
-i<stdio.h>
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/assets
-c000000004F90825E0000000000000044
-t1334870622
-s68
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/LocationManager Sample.LinkFileList
-c000000004F9082C600000000000000C2
-t1334870726
-s194
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.o
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/com.apple.build-tools.platform.validate
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app.dSYM
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/Info.plist
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/PkgInfo
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/assets
-t2
-s0
-
-N/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision
-t2
-s0
-
-NLocationManagerSample-Info.plist
-c000000004F9082B000000000000005AF
-t1334870704
-s1455
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies5bcd0a46ba40b541^17480c46ba40b541^-82"warning: all apps should include an armv7 architecture (current ARCHS = "armv6").1(21%IDEActivityLogMessage2@81"Warning: all apps should include an armv7 architecture (current ARCHS = "armv6").-356563526#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"F09E1231-EB14-49F3-A186-E70C973BD5BE-
-
-CCodeSign "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"
-s356563527.108980
-e356563527.965235
-r1
-xCodeSign
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"CodeSign "build/Release-iphoneos/LocationManager Sample.app"27f71b47ba40b541^091af747ba40b541^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager%20Sample.app/0000000000000000^1112"CodeSign "build/Release-iphoneos/LocationManager Sample.app"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /usr/bin/codesign --force --sign 78423b5abdc809a53ceaef3fdd692ac7f511ed2e "--resource-rules=/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist" --entitlements "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"36"C97E98C1-E679-471B-AE0B-E8D76FA8000F-
-
-CCompileC build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.o /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp normal armv6 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s356563526.111709
-e356563526.234391
-r1
-xCompileC
-xbuild/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.o
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp
-xnormal
-xarmv6
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp87e01c46ba40b541^0c013c46ba40b541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp0000000000000000^3669"CompileC build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.o Classes/Main.cpp normal armv6 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv6 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -miphoneos-version-min=3.2 -iquote "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample-generated-files.hmap" "-I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample-own-target-headers.hmap" "-I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample-all-target-headers.hmap" -iquote "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample-project-headers.hmap" -I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/include -I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/DerivedSources/armv6 -I/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/DerivedSources -F/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -MMD -MT dependencies -MF /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.d --serialize-diagnostics /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.dia -c /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/Classes/Main.cpp -o /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/Main.o36"76B16DFD-26AA-45B0-8C0B-B012FD805F3C-
-
-CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist"
-s356563526.051298
-e356563526.088698
-r1
-xCpResource
-x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
-xbuild/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist75390d46ba40b541^63b41646ba40b541^---0#0#0#-19%DVTDocumentLocation2@174"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager%20Sample.app/ResourceRules.plist000000000080d041^1014"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"36"C979DE3E-A9BB-4FC4-ADFB-5322F513F643-
-
-CCpResource assets "build/Release-iphoneos/LocationManager Sample.app/assets"
-s356563526.099433
-e356563526.102415
-r1
-xCpResource
-xassets
-xbuild/Release-iphoneos/LocationManager Sample.app/assets
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Release-iphoneos/LocationManager Sample.app/assets158d1946ba40b541^22381a46ba40b541^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager%20Sample.app/assets000000000080d041^858"CpResource assets "build/Release-iphoneos/LocationManager Sample.app/assets"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/assets "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"36"2B5A9455-0DA6-4A52-A5F5-02AF03E18E49-
-
-CGenerateDSYMFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app.dSYM" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample"
-s356563526.931499
-e356563527.037328
-r1
-xGenerateDSYMFile
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app.dSYM
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection152"Generating /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app.dSYMbd8cee46ba40b541^a08c0947ba40b541^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager%20Sample.app.dSYM000000000080d041^832"GenerateDSYMFile "build/Release-iphoneos/LocationManager Sample.app.dSYM" "build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample" -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app.dSYM"36"0837D30B-E0F5-4654-9EFD-4E00EE77B871-
-
-CLd "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample" normal armv6
-s356563526.242274
-e356563526.923918
-r1
-xLd
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample
-xnormal
-xarmv6
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Link /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample21403e46ba40b541^d385ec46ba40b541^---0#0#0#--1777"Ld "build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample" normal armv6    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos -L/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/lib/armv6 -F/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos -filelist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/Objects-normal/armv6/LocationManager Sample.LinkFileList" -dead_strip -lstd -lregexp -lzlib -lnme -llocationmanager -lcurl_ssl -lpng -ljpeg -lz -lApplicationMain -miphoneos-version-min=3.2 -framework UIKit -framework OpenAL -framework OpenGLES -framework QuartzCore -framework CoreAudio -framework CoreGraphics -framework AudioToolbox -framework AVFoundation -framework Foundation -framework UIKit -framework CoreLocation -framework CoreGraphics -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/LocationManager Sample"36"B7A0BD14-C7EA-4C2C-B33D-55AF7E32387F-
-
-CProcessInfoPlistFile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/Info.plist" LocationManagerSample-Info.plist
-s356563526.051309
-e356563526.091204
-r1
-xProcessInfoPlistFile
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/Info.plist
-xLocationManagerSample-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Process LocationManagerSample-Info.plist43390d46ba40b541^e2581746ba40b541^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/LocationManagerSample-Info.plist0000000000000000^1034"ProcessInfoPlistFile "build/Release-iphoneos/LocationManager Sample.app/Info.plist" LocationManagerSample-Info.plist    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-infoPlistUtility LocationManagerSample-Info.plist -genpkginfo "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/ResourceRules.plist" -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/Info.plist"36"25BAEC3C-AF93-490F-8CD0-ED6EFAA15F24-
-
-CProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision"
-s356563527.071639
-e356563527.075814
-r1
-xProcessProductPackaging
-x/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection222"ProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision"7a711247ba40b541^b2671347ba40b541^---0#0#0#-19%DVTDocumentLocation2@179"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager%20Sample.app/embedded.mobileprovision0000000000000000^858"ProcessProductPackaging "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" "build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-productPackagingUtility "/Users/emilianoangelini/Library/MobileDevice/Provisioning Profiles/035E1977-9557-41EC-8CFB-10D7CA5BE90C.mobileprovision" -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app/embedded.mobileprovision"36"07D29152-ECC8-4352-B660-BB777478CD24-
-
-CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent"
-s356563527.097767
-e356563527.100810
-r1
-xProcessProductPackaging
-x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection254"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent"50171947ba40b541^6cce1947ba40b541^---0#0#0#-19%DVTDocumentLocation2@212"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager%20Sample.xcent000000000080d041^948"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist -entitlements -format xml -o "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/LocationManagerSample.build/Release-iphoneos/LocationManagerSample.build/LocationManager Sample.xcent"36"2EFF53E4-505F-4C91-A953-00F16403A652-
-
-CTouch "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"
-s356563527.085074
-e356563527.089709
-r1
-xTouch
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"Touch /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app4aed1547ba40b541^0af71647ba40b541^---0#0#0#--529"Touch "build/Release-iphoneos/LocationManager Sample.app"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    /usr/bin/touch -c "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"36"A3179A31-EF8C-4883-A1EF-1730DAFC4A14-
-
-CValidate "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"
-s356563527.973844
-e356563530.717815
-r1
-xValidate
-x/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app
-owarning: Icon specified in the Info.plist not found under the top level app wrapper: Icon.png (-19007)
-oUnable to validate your application. - (null)
-o
-owarning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)
-oUnable to validate your application. - (null)
-o
-owarning: iPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72 (-19013)
-oUnable to validate your application. - (null)
-o
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Validate "build/Release-iphoneos/LocationManager Sample.app"e674f947ba40b541^98c2b74aba40b541^-656"warning: Icon specified in the Info.plist not found under the top level app wrapper: Icon.png (-19007)Unable to validate your application. - (null)warning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)Unable to validate your application. - (null)warning: iPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72 (-19013)Unable to validate your application. - (null)3(21%IDEActivityLogMessage2@94" Icon specified in the Info.plist not found under the top level app wrapper: Icon.png (-19007)84"Icon specified in the Info.plist not found under the top level app wrapper: Icon.png356563530#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@202" iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)192"IPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57356563530#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@192" iPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72 (-19013)182"IPad: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon-72.png that is 72x72356563530#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@155"file://localhost/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager%20Sample.app/0000000000000000^673"Validate "build/Release-iphoneos/LocationManager Sample.app"    cd /Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation "/Users/emilianoangelini/dev/haXeNME/nmeXtensions/LocationManager/Project/Export/iphone/build/Release-iphoneos/LocationManager Sample.app"36"905B14A9-A73D-4CB5-BDAB-FE3C33E05709-
-
