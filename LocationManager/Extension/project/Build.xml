@@ -20,7 +20,6 @@
         <compilerflag value="-Iinclude"/>
 		<file name="iphone/LocationManager.mm"/>
 		<file name="iphone/LocationManagerDelegate.mm"/>
-		<file name="iphone/CLLocation (Strings).mm"/>
     </files>
     
 	<files id="common">

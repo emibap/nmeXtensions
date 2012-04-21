@@ -23,8 +23,5 @@
 	<setenv name="HXCPP_LOAD_DEBUG" value="1" />
 	
 	<!-- This is a required iOS framework -->
-	<dependency name="UIKit.framework" if="ios" />
 	<dependency name="CoreLocation.framework" if="ios" />
-	<dependency name="CoreGraphics.framework" if="ios" />
-	
 </project>

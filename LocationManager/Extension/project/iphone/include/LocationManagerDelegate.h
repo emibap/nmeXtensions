@@ -1,3 +1,6 @@
+// LocationManagerDelegate: Based on the Locateme sample from Apple
+// Modifications for NME extension made by Emiliano Angelini (emibap)
+
 /*
      File: GetLocationViewController.h
  Abstract: Attempts to acquire a location measurement with a specific level of accuracy. A timeout is used to avoid wasting power in the case where a sufficiently accurate measurement cannot be acquired. Presents a SetupViewController instance so the user can configure the desired accuracy and timeout. Uses a LocationDetailViewController instance to drill down into details for a given location measurement.
@@ -48,43 +51,22 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-//#import "SetupViewController.h"
 
-//@class LocationDetailViewController;
 typedef void (*LocationUpdateCallback)(float, float);
 typedef void (*LocationFinishedUpdateCallback)(const char *);
 typedef void (*LocationErrorCallback)(const char *);
 
 @interface LocationManagerDelegate : UIViewController <CLLocationManagerDelegate> {
-    //SetupViewController *setupViewController;
-    //UIButton *startButton;
-    //UILabel *descriptionLabel;
     CLLocationManager *locationManager;
-    //NSMutableArray *locationMeasurements;
     CLLocation *bestEffortAtLocation;
-    //UITableView *tableView;
-    //NSDateFormatter *dateFormatter;
     NSString *stateString;
-    //LocationDetailViewController *locationDetailViewController;
-    //LocationUpdateCallback onlocationUpdateCB;
-    //LocationFinishedUpdateCallback onFinishedUpdatingCB;
-    //LocationErrorCallback onErrorCB;
 }
 
 + (LocationManagerDelegate *)sharedInstance;
 
-//@property (nonatomic, retain, readonly) SetupViewController *setupViewController;
-//@property (nonatomic, retain) IBOutlet UIButton *startButton;
-//@property (nonatomic, retain) IBOutlet UILabel *descriptionLabel;
 @property (nonatomic, retain) CLLocationManager *locationManager;
-//@property (nonatomic, retain) NSMutableArray *locationMeasurements;
 @property (nonatomic, retain) CLLocation *bestEffortAtLocation;
-//@property (nonatomic, retain) IBOutlet UITableView *tableView;
-//@property (nonatomic, retain, readonly) NSDateFormatter *dateFormatter;
 @property (nonatomic, retain) NSString *stateString;
-//@property (nonatomic, retain, readonly) LocationDetailViewController *locationDetailViewController;
-
-//- (IBAction)start:(id)sender;
 
 - (void)startUpdatingLocation:(int)timeout locationUpdateCB:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(LocationFinishedUpdateCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError;
 

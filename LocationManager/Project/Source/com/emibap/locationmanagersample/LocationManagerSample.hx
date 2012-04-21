@@ -44,8 +44,6 @@ class LocationManagerSample extends Sprite {
 		statusTxt.multiline = true;
 		statusTxt.text = "Hello-\n\n\n";
 		
-		
-		
 		labelTxt = new TextField ();
 		labelTxt.defaultTextFormat = new TextFormat ("_sans", 24, 0xCCCCCC);
 		labelTxt.width = 320;
@@ -64,7 +62,7 @@ class LocationManagerSample extends Sprite {
 		
 		btn.addChild (labelTxt);
 		
-		btn.addEventListener(MouseEvent.CLICK, startUpdatingLocation);
+		btn.addEventListener(MouseEvent.CLICK, toggleUpdatingLocation);
 		
 		addChild(statusTxt);
 		
@@ -73,10 +71,19 @@ class LocationManagerSample extends Sprite {
 		
 	}
 	
-	private function startUpdatingLocation(e:MouseEvent):Void {
-		LocationManager.startUpdatingLocation(10, onLocationUpdate, onFinishedUpdatingLocation, onFLocationError);
-		trace("- StartUpdatingLocation...");
-		statusTxt.text += "\n- StartUpdatingLocation...";
+	private function toggleUpdatingLocation(e:MouseEvent):Void {
+	
+		if (labelTxt.text.indexOf("start") != -1) {
+			LocationManager.startUpdatingLocation(10, onLocationUpdate, onFinishedUpdatingLocation, onFLocationError);
+			trace("- StartUpdatingLocation...");
+			statusTxt.text += "\n- StartUpdatingLocation...";
+			labelTxt.text = "stop Updating Location";
+		} else {
+			LocationManager.stopUpdatingLocation();
+			trace("- StopUpdatingLocation...");
+			statusTxt.text += "\n- StopUpdatingLocation...";
+			labelTxt.text = "start Updating Location";
+		}
 	}
 	
 	private function onLocationUpdate(lat:Float, lon:Float):Void {
@@ -87,6 +94,7 @@ class LocationManagerSample extends Sprite {
 	private function onFinishedUpdatingLocation(status:String):Void {
 		trace("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!!!!!!!!!!!!!   Location finished Updating: " + status);
 		statusTxt.text += "\n- Location finished Updating: " + Std.string(status);
+		labelTxt.text = "start Updating Location";
 	}
 	
 	private function onFLocationError(status:String):Void {
