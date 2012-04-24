@@ -5,6 +5,5 @@ MailSender/Extension/project/obj/*
 LocationManager/Extension/project/obj/*
 *.pibd
 *.userprefs
-*.sln
 MailSender/Project/MailSenderSample.userprefs
 MailSender/Project/MailSenderSample.pidb
