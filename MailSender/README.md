@@ -7,7 +7,8 @@ This is a native extension for haxe NME which allows to call a native mail windo
 
 Reference the extension in your .nmml:
 
-    <extension name="appleRemote" path="path/to/mailSender/Extension" />
+    <include path="path/to/MailSender/Extension" />
+    
 
 Reference the following iOS framework in your .nmml:
 
@@ -19,8 +20,8 @@ Just call this static Method:
 	
 	Parameters:
 	-----------
-	Subject:String
-	Body:String
+	subject:String
+	body:String
 	isHTML:Boolean
 	to:String
 	cc:String

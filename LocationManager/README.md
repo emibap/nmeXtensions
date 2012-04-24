@@ -1,33 +1,45 @@
-**NME extensions Repo**
+**Haxe NME LocationManager extension**
 
-This is the place where I'll put all my NME extensions.
-
-Usually I'll add 2 folders for each extension (based on Joshua Granick's structure):
-- Extension: Source and perhaps some compiled ones.
-- Project: A sample NME project to quickly test the extension.
+This is a native extension for haxe NME which allows to obtain the location (Latitude / Longitude) of a device.
+(Currently iOS only)
 
 **Usage**
 
 Reference the extension in your .nmml:
+	<include path="path/to/LocationManager/Extension" />
 
-    <include path="path/to/desired/Extension" />
+Reference the following iOS framework in your .nmml:
 
-Sometimes you'll have to also add a reference to some native framework in your .nmml. For instance:
+	<dependency name="CoreLocation.framework" if="ios" />
 
-	<dependency name="MessageUI.framework" if="ios" />
-	
-Find specific APIs for each extension inside their folders.
+LocationManager works in the following way:
+
+	After a startUpdatingLocation static call, the locationUpdate process begins and for every location update a callback is called, until a timeout is reached.
+	The duration of the process can be specified in the call.
+	There's also the possibility to stop the locationUpdate process by using the stopUpdatingLocation() static method.
+
+Just call this static Methods to use it:
+    
+	LocationManager.startUpdatingLocation(totalTimer:Int = 30, locationUpdateCB:Dynamic, finishedUpdatingCB:Dynamic, errorCB:Dynamic)
+
+	Parameters:
+	-----------
+	totalTimer:Int - The desired time in seconds for the location
+	locationUpdateCB:Dynamic - A callback for each location update. Has 2 Float parameters for latitude and longitude.
+	finishedUpdatingCB:Dynamic - A callback that notifies when the location update has finished. Has a status String parameter.
+	errorCB:Dynamic - A callback that reports an error. Has a status String parameter.
+
+	LocationManager.stopUpdatingLocation();
 
 **Running the test application**
 
-    Go to the Project folder and run a build nme command for your desired nmml file.
-    
-    For instance: 
     cd Project
-    nme build MailSenderSample.nmml ios
+    nme build LocationManagerSample.nmml ios
     
     or 
-    nme update MailSenderSample.nmml ios
+    nme update LocationManagerSample.nmml ios
+
+	For the flash target a mailto: URL call is being used.
 
 **Recompiling the extension**
 
@@ -44,6 +56,7 @@ Find specific APIs for each extension inside their folders.
 	haxelib run hxcpp Build.xml -Dandroid
 	haxelib run hxcpp Build.xml -Dblackberry
 	(depending on your target)
+    
 
 **License:**
 
@@ -70,3 +83,8 @@ This extension and example license:
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
+
+The extension includes a copy of some classes from Apple's [LocateMe sample][1] (see license information in the relevant
+files).
+
+[1]: http://developer.apple.com/library/ios/#samplecode/LocateMe/Introduction/Intro.html
