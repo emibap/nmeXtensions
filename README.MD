@@ -1,41 +1,33 @@
-**Haxe NME MailSender extension**
+**NME extensions Repo**
 
-This is a native extension for haxe NME which allows to call a native mail window.
-(Currently iOS only)
+This is the place where I'll put all my NME extensions.
+
+Usually I'll add 2 folders for each extension (based on Joshua Granick's structure):
+- Extension: Source and perhaps some compiled ones.
+- Project: A sample NME project to quickly test the extension.
 
 **Usage**
 
 Reference the extension in your .nmml:
 
-    <extension name="appleRemote" path="path/to/mailSender/Extension" />
+    <extension name="appleRemote" path="path/to/desired/Extension" />
 
-Reference the following iOS framework in your .nmml:
+Sometimes you'll have to also add a reference to some native framework in your .nmml. For instance:
 
 	<dependency name="MessageUI.framework" if="ios" />
-
-Just call this static Method:
-    
-    MailSender.sendMail("MailSender sendMail sample", "Howdy, partner\n", false, "youremail@gmail.com", "youremail@gmail.com", "youremail@gmail.com");
 	
-	Parameters:
-	-----------
-	Subject:String
-	Body:String
-	isHTML:Boolean
-	to:String
-	cc:String
-	bcc:String
-
+Find specific APIs for each extension inside their folders.
 
 **Running the test application**
 
+    Go to the Project folder and run a build nme command for your desired nmml file.
+    
+    For instance: 
     cd Project
     nme build MailSenderSample.nmml ios
     
     or 
     nme update MailSenderSample.nmml ios
-
-	For the flash target a mailto: URL call is being used.
 
 **Recompiling the extension**
 
@@ -52,7 +44,6 @@ Just call this static Method:
 	haxelib run hxcpp Build.xml -Dandroid
 	haxelib run hxcpp Build.xml -Dblackberry
 	(depending on your target)
-    
 
 **License:**
 
