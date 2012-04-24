@@ -1,3 +1,5 @@
 MailSender/Project/Export/*
 LocationManager/Project/Export/*
 MailSender/Project/MailSenderSample.userprefs
+MailSender/Extension/project/obj/*
+LocationManager/Extension/project/obj/*
