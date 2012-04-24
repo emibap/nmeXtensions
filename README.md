@@ -70,8 +70,3 @@ This extension and example license:
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
-
-The extension includes a copy of some classes from Apple's [MailComposer sample][1] (see license information in the relevant
-files).
-
-[1]: http://developer.apple.com/library/ios/#samplecode/MailComposer/Introduction/Intro.html
