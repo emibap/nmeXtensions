@@ -60,7 +60,7 @@
 static LocationManagerDelegate *sharedInstance = nil;
 
 static LocationUpdateCallback onlocationUpdateCB;
-static LocationFinishedUpdateCallback onFinishedUpdatingCB;
+static FinishedUpdatingCallback onFinishedUpdatingCB;
 static LocationErrorCallback onErrorCB;
 
 // Singleton Methods
@@ -84,15 +84,19 @@ static LocationErrorCallback onErrorCB;
 #pragma mark Location Manager Interactions 
 
 /*
- * All the magis starts here.
+ * All the magic starts here.
  */
-- (void)startUpdatingLocation:(int)timeout locationUpdateCB:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(LocationFinishedUpdateCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError {
-	//NSLog(@"LocationManagerDelegate startUpdatingLocation...");
+ 
+ - (void)setCallBacks:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(FinishedUpdatingCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError {
 	
 	// Setting the callBacks
 	onlocationUpdateCB = onLocUpdate;
 	onFinishedUpdatingCB = onFinishedUpdating;
 	onErrorCB = onError;
+ }
+ 
+- (void)startUpdatingLocation {
+	//NSLog(@"LocationManagerDelegate startUpdatingLocation...");
 
     // Create the manager object 
     self.locationManager = [[[CLLocationManager alloc] init] autorelease];
@@ -102,12 +106,33 @@ static LocationErrorCallback onErrorCB;
     //locationManager.desiredAccuracy = [[setupInfo objectForKey:kSetupInfoKeyAccuracy] doubleValue];
     // Setting to best accuracy. (May change in future versions)
     locationManager.desiredAccuracy = [[NSNumber numberWithDouble:kCLLocationAccuracyBest] doubleValue];
+    
+    // no te olvides de la distancia
+    
     // Once configured, the location manager must be "started".
     [locationManager startUpdatingLocation];
     // Set a timeout for the locationUpdate
-    [self performSelector:@selector(stopUpdatingLocation:) withObject:@"Timed Out" afterDelay:[[NSNumber numberWithDouble:timeout] doubleValue]];
-    self.stateString = NSLocalizedString(@"Updating", @"Updating");
+    
+    //self.stateString = NSLocalizedString(@"Updating", @"Updating");
 }
+
+- (Location)CLLocation2Struct:(CLLocation *)clloc {
+	
+	Location loc = Location();
+	loc.altitude = clloc.altitude;
+	loc.latitude = clloc.coordinate.latitude;
+	loc.longitude = clloc.coordinate.longitude;
+	loc.course = clloc.course;
+	loc.horizontalAccuracy = clloc.horizontalAccuracy;
+	loc.speed = clloc.speed;
+	loc.timestamp = [clloc.timestamp timeIntervalSince1970] * 1000;
+	loc.verticalAccuracy = clloc.verticalAccuracy;
+	
+	return loc;
+	
+	
+}
+
 
 /*
  * We want to get and store a location measurement that meets the desired accuracy. For this example, we are
@@ -116,37 +141,12 @@ static LocationErrorCallback onErrorCB;
  */
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {    
     //NSLog(@"LocationManagerDelegate didUpdateToLocation...");
- 
-    // test the age of the location measurement to determine if the measurement is cached
-    // in most cases you will not want to rely on cached measurements
-    NSTimeInterval locationAge = -[newLocation.timestamp timeIntervalSinceNow];
-    if (locationAge > 5.0) return;
-    // test that the horizontal accuracy does not indicate an invalid measurement
-    if (newLocation.horizontalAccuracy < 0) return;
-    // test the measurement to see if it is more accurate than the previous measurement
-    if (bestEffortAtLocation == nil || bestEffortAtLocation.horizontalAccuracy > newLocation.horizontalAccuracy) {
-        //NSLog(@" newLocation.coordinates: %f , %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
-
-        onlocationUpdateCB(newLocation.coordinate.latitude, newLocation.coordinate.longitude);
-        
-        // store the location as the "best effort"
-        self.bestEffortAtLocation = newLocation;
-        // test the measurement to see if it meets the desired accuracy
-        //
-        // IMPORTANT!!! kCLLocationAccuracyBest should not be used for comparison with location coordinate or altitidue 
-        // accuracy because it is a negative value. Instead, compare against some predetermined "real" measure of 
-        // acceptable accuracy, or depend on the timeout to stop updating. This sample depends on the timeout.
-        //
-        if (newLocation.horizontalAccuracy <= locationManager.desiredAccuracy) {
-            // we have a measurement that meets our requirements, so we can stop updating the location
-            // 
-            // IMPORTANT!!! Minimize power usage by stopping the location manager as soon as possible.
-            //
-            [self stopUpdatingLocation:NSLocalizedString(@"Acquired Location", @"Acquired Location")];
-            // we can also cancel our previous performSelector:withObject:afterDelay: - it's no longer necessary
-            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(stopUpdatingLocation:) object:nil];
-        }
-    }
+ 	
+ 	Location newLoc = [self CLLocation2Struct:newLocation];
+ 	Location oldLoc = [self CLLocation2Struct:oldLocation];
+ 	
+ 	onlocationUpdateCB(newLoc, oldLoc);
+ 	
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {

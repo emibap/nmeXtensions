@@ -1,10 +1,12 @@
-MailSender/Project/Export/*
 LocationManager/Project/Export/*
-MailSender/Project/MailSenderSample.userprefs
-MailSender/Extension/project/obj/*
 LocationManager/Extension/project/obj/*
+MailSender/Project/Export/*
+MailSender/Extension/project/obj/*
+ImageSaver/Project/Export/*
+ImageSaver/Extension/project/obj/*
 *.pibd
 *.userprefs
 *.sln
+MailSender/Project/MailSenderSample.userprefs
 MailSender/Project/MailSenderSample.userprefs
 MailSender/Project/MailSenderSample.pidb

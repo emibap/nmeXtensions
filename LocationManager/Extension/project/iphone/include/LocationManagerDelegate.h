@@ -51,9 +51,10 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#include "Location.h"
 
-typedef void (*LocationUpdateCallback)(float, float);
-typedef void (*LocationFinishedUpdateCallback)(const char *);
+typedef void (*LocationUpdateCallback)(Location, Location);
+typedef void (*FinishedUpdatingCallback)(const char *);
 typedef void (*LocationErrorCallback)(const char *);
 
 @interface LocationManagerDelegate : UIViewController <CLLocationManagerDelegate> {
@@ -68,7 +69,9 @@ typedef void (*LocationErrorCallback)(const char *);
 @property (nonatomic, retain) CLLocation *bestEffortAtLocation;
 @property (nonatomic, retain) NSString *stateString;
 
-- (void)startUpdatingLocation:(int)timeout locationUpdateCB:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(LocationFinishedUpdateCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError;
+- (void)setCallBacks:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(FinishedUpdatingCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError;
+
+- (void)startUpdatingLocation;
 
 - (void)stopUpdatingLocation:(NSString *)state;
 

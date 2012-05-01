@@ -8,6 +8,10 @@
 
 
 #include <hx/CFFI.h>
+#include <hxcpp.h>
+#include <Dynamic.h>
+
+#include "Location.h"
 #include "LocationManager.h"
 
 using namespace locationManager;
@@ -18,9 +22,24 @@ AutoGCRoot *sOnErrorCallback = 0;
 #ifdef IPHONE
 
 
-static void onLocationUpdate(float latitude, float longitude)
+static value locationStruct2Value(Location stLoc)
 {
-   val_call2( sOnLocationUpdateCallback->get(), alloc_float(latitude), alloc_float(longitude));
+	value loc = alloc_empty_object();
+	alloc_field(loc, val_id("altitude"), alloc_float(stLoc.altitude));
+	alloc_field(loc, val_id("latitude"), alloc_float(stLoc.latitude));
+	alloc_field(loc, val_id("longitude"), alloc_float(stLoc.longitude));
+	alloc_field(loc, val_id("course"), alloc_float(stLoc.course));
+	alloc_field(loc, val_id("horizontalAccuracy"), alloc_float(stLoc.horizontalAccuracy));
+	alloc_field(loc, val_id("speed"), alloc_float(stLoc.speed));
+	alloc_field(loc, val_id("timestamp"), alloc_float(stLoc.timestamp));
+	alloc_field(loc, val_id("verticalAccuracy"), alloc_float(stLoc.verticalAccuracy));
+	
+	return loc;	
+}
+
+static void onLocationUpdate(Location newLoc, Location oldLoc)
+{
+   val_call2( sOnLocationUpdateCallback->get(), locationStruct2Value(newLoc), locationStruct2Value(oldLoc));
 }
 
 static void onFinishedUpdating(const char *status)
@@ -41,7 +60,7 @@ static void onError(const char *status)
 	val_call1( sOnErrorCallback->get(), alloc_string(status) );
 }
 
-static void locationmanager_start_updating_location (value totalTimer, value locationChangeCB, value finishedUpdatingCB, value errorCB) {
+static void locationmanager_start_updating_location (value locationChangeCB, value finishedUpdatingCB, value errorCB) {
     
     if (sOnLocationUpdateCallback != 0) stopUpdatingLocation("Restarted");//onFinishedUpdating("Restart");
     
@@ -49,10 +68,12 @@ static void locationmanager_start_updating_location (value totalTimer, value loc
 	sOnFinishedUpdatingCallback = new AutoGCRoot(finishedUpdatingCB);
 	sOnErrorCallback = new AutoGCRoot(errorCB);
     
-	startUpdatingLocation(val_int (totalTimer), onLocationUpdate, onFinishedUpdating, onError);
+    setCallBacks(onLocationUpdate, onFinishedUpdating, onError);
+    
+	startUpdatingLocation();
     
 }
-DEFINE_PRIM (locationmanager_start_updating_location, 4);
+DEFINE_PRIM (locationmanager_start_updating_location, 3);
 
 static void locationmanager_stop_updating_location() {
 	if (sOnLocationUpdateCallback != 0) stopUpdatingLocation("StopCalled");

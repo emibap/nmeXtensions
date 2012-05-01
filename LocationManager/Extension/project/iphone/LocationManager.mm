@@ -3,9 +3,14 @@
 
 namespace locationManager {
     
-	void startUpdatingLocation(int totalTimer, LocationUpdateCallback onLocationUpdateCB, LocationFinishedUpdateCallback onFinishedUpdateCB, LocationErrorCallback onErrorCB) {
+    void setCallBacks(LocationUpdateCallback onLocationUpdateCB, FinishedUpdatingCallback onFinishedUpdatingCB, LocationErrorCallback onErrorCB) {
 	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
-	    [locMan startUpdatingLocation:totalTimer locationUpdateCB:onLocationUpdateCB finishedUpdatingCB:onFinishedUpdateCB errorCB:onErrorCB];    
+	    [locMan setCallBacks:onLocationUpdateCB finishedUpdatingCB:onFinishedUpdatingCB errorCB:onErrorCB];
+    }
+    
+	void startUpdatingLocation() {
+	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
+	    [locMan startUpdatingLocation];    
     }
     
     void stopUpdatingLocation(const char *status) {

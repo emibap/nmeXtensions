@@ -74,7 +74,7 @@ class LocationManagerSample extends Sprite {
 	private function toggleUpdatingLocation(e:MouseEvent):Void {
 	
 		if (labelTxt.text.indexOf("start") != -1) {
-			LocationManager.startUpdatingLocation(10, onLocationUpdate, onFinishedUpdatingLocation, onFLocationError);
+			LocationManager.startUpdatingLocation(onLocationUpdate, onFinishedUpdatingLocation, onFLocationError);
 			trace("- StartUpdatingLocation...");
 			statusTxt.text += "\n- StartUpdatingLocation...";
 			labelTxt.text = "stop Updating Location";
@@ -86,9 +86,11 @@ class LocationManagerSample extends Sprite {
 		}
 	}
 	
-	private function onLocationUpdate(lat:Float, lon:Float):Void {
-		trace("- Location arrived to haxe - latitude reported: " + lat + ", " + Std.string(lon));
-		statusTxt.text += "\n- Location arrived: " + Std.string(lat) + ", " + Std.string(lon);
+	private function onLocationUpdate(newLoc:Dynamic, oldLoc:Dynamic):Void {
+		//trace("- Location arrived to haxe - latitude reported: " + newLoc.latitude + ", " + newLoc.longitude);
+		statusTxt.text += "\n- Location arrived: " + Std.string(newLoc.latitude) + ", " + Std.string(newLoc.longitude);
+		statusTxt.text += "\n- Location timestamp: " + Date.fromTime(newLoc.timestamp).toString();
+		statusTxt.text += "\n- vs date: " + Date.now().toString();
 	}
 	
 	private function onFinishedUpdatingLocation(status:String):Void {

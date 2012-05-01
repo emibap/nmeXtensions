@@ -1,13 +1,17 @@
 #ifndef LocationManager
 #define LocationManager
 
+#include "Location.h"
+
 namespace locationManager {
 	
-	typedef void (*LocationUpdateCallback)(float, float);
-	typedef void (*LocationFinishedUpdateCallback)(const char *);
+	typedef void (*LocationUpdateCallback)(Location, Location);
+	typedef void (*FinishedUpdatingCallback)(const char *);
 	typedef void (*LocationErrorCallback)(const char *);
 	
-	void startUpdatingLocation(int totalTimer, LocationUpdateCallback onLocationUpdateCB, LocationFinishedUpdateCallback onFinishedUpdateCB, LocationErrorCallback onErrorCB);
+	
+	void setCallBacks(LocationUpdateCallback onLocationUpdateCB, FinishedUpdatingCallback onFinishedUpdatingCB, LocationErrorCallback onErrorCB);
+	void startUpdatingLocation();
 	void stopUpdatingLocation(const char *status);
 }
 
