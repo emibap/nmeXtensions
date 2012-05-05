@@ -30,6 +30,28 @@ class LocationManager {
 		#end	
 	}
 	
+	public static function authorizationStatus():Int {
+		#if cpp
+			return cpp_call_authorization_status();
+		#else
+			return 0;
+		#end	
+
+	}
+	
+	public static function locationServicesEnabled():Bool {
+		#if cpp
+			return cpp_call_location_services_enabled();
+		#else
+			return false;
+		#end	
+	}
+
+	
+
+	
+	
+	// CallBacks
 	public static function onLocationUpdateDefaultCB(newLocation:Dynamic, oldLocation:Dynamic):Void {
 		
 		if (_locUpdateCB != null) _locUpdateCB(newLocation, oldLocation);
@@ -41,9 +63,12 @@ class LocationManager {
 	public static function onErrorDefaultCB(status:String):Void {
 		trace("LocationManager Default callback - Error updating location. Status: " + status);
 	}
+	
 	#if cpp
 	private static var cpp_call_start_updating_location = Lib.load ("locationmanager", "locationmanager_start_updating_location", 3);
 	private static var cpp_call_stop_updating_location = Lib.load ("locationmanager", "locationmanager_stop_updating_location", 0);
+	private static var cpp_call_authorization_status = Lib.load ("locationmanager", "locationmanager_authorization_status", 0);
+	private static var cpp_call_location_services_enabled  = Lib.load ("locationmanager", "locationmanager_location_services_enabled", 0);
 	#end
 	
 }

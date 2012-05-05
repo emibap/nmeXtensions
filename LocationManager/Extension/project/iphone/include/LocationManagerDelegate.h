@@ -75,4 +75,8 @@ typedef void (*LocationErrorCallback)(const char *);
 
 - (void)stopUpdatingLocation:(NSString *)state;
 
+- (int) authorizationStatus;
+
+- (bool) locationServicesEnabled;
+
 @end

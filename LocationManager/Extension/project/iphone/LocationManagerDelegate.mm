@@ -87,7 +87,15 @@ static LocationErrorCallback onErrorCB;
  * All the magic starts here.
  */
  
- - (void)setCallBacks:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(FinishedUpdatingCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError {
+- (int) authorizationStatus {
+	return (int) [CLLocationManager authorizationStatus];
+}  
+
+- (bool) locationServicesEnabled {
+	return [CLLocationManager locationServicesEnabled] == YES;
+} 
+   
+- (void)setCallBacks:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(FinishedUpdatingCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError {
 	
 	// Setting the callBacks
 	onlocationUpdateCB = onLocUpdate;

@@ -41,6 +41,16 @@ class LocationManagerSample extends Sprite {
 		firstLock = true;
 		
 		initialize ();
+		
+		/*
+		Authorization status values:
+		0: Not Determined
+		1: Restricted
+		2: Denied
+		3: Authorized
+		*/
+		trace("AuthorizationStatus: " + LocationManager.authorizationStatus());
+		trace("LocationServicesEnabled:: " + LocationManager.locationServicesEnabled());
 	}
 
 	

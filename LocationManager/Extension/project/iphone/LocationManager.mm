@@ -17,4 +17,15 @@ namespace locationManager {
 	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
 	    [locMan stopUpdatingLocation:[NSString stringWithCString:status encoding:NSUTF8StringEncoding]];
     }
+    
+    int authorizationStatus() {
+	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
+		return [locMan authorizationStatus];
+    }
+    
+    bool locationServicesEnabled() {
+	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
+		return [locMan locationServicesEnabled];
+    }
+
 }

@@ -79,6 +79,17 @@ static void locationmanager_stop_updating_location() {
 	if (sOnLocationUpdateCallback != 0) stopUpdatingLocation("StopCalled");
 }
 DEFINE_PRIM (locationmanager_stop_updating_location, 0);
+
+static value locationmanager_authorization_status() {
+	return alloc_int(authorizationStatus());
+}
+DEFINE_PRIM (locationmanager_authorization_status, 0);
+
+static value locationmanager_location_services_enabled() {
+	return alloc_bool(locationServicesEnabled());
+}
+DEFINE_PRIM (locationmanager_location_services_enabled, 0);
+
 #endif
 
 

@@ -12,6 +12,8 @@ namespace locationManager {
 	void setCallBacks(LocationUpdateCallback onLocationUpdateCB, FinishedUpdatingCallback onFinishedUpdatingCB, LocationErrorCallback onErrorCB);
 	void startUpdatingLocation();
 	void stopUpdatingLocation(const char *status);
+	int authorizationStatus();
+	bool locationServicesEnabled();
 }
 
 #endif
