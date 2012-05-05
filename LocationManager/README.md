@@ -2,6 +2,7 @@
 
 This is a native extension for haxe NME which allows to obtain the location (Latitude / Longitude) of a device.
 (Currently iOS only)
+If my free time allows it, my goal is to replicate the functionality of the [CLLocationManager][4] class.
 
 **Usage**
 
@@ -16,6 +17,16 @@ LocationManager works in the following way:
 
 	After a startUpdatingLocation static call, the locationUpdate process begins and for every location update a callback is called.
 	The callback comes with 2 location objects, one for the new location and another for the previous one.
+		
+	This is a list of all the properties of a Location Object:
+		altitude:Float;
+		latitude:Float;
+		longitude:Float;
+		course:Float;
+		horizontalAccuracy:Float;
+		speed:Float;
+		timestamp:Float; (ms sin 1970)
+		verticalAccuracy:Float;
 
 	The process can be stopped by using the stopUpdatingLocation() static method. And if there's an error It will be notified by another callback.
 
@@ -25,7 +36,7 @@ Just call this static Methods to use it:
 
 	Parameters:
 	-----------
-	locationUpdateCB:Dynamic - A callback for each location update. Has 2 Float parameters for latitude and longitude.
+	locationUpdateCB:Dynamic - A callback for each location update. Brings 2 location Dynamic parameters for the new and old Locations.
 	finishedUpdatingCB:Dynamic - A callback that notifies when the location update has finished. Has a status String parameter.
 	errorCB:Dynamic - A callback that reports an error. Has a status String parameter.
 
@@ -90,3 +101,4 @@ This code simply returns location updates and marks them a the map. For a more a
 [1]: http://developer.apple.com/library/ios/#samplecode/LocateMe/Introduction/Intro.html
 [2]: http://code.google.com/p/haxemaps/
 [3]: http://stackoverflow.com/questions/1081219/optimizing-cllocationmanager-corelocation-to-retrieve-data-points-faster-on-the
+[4]: http://developer.apple.com/library/ios/#DOCUMENTATION/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html
