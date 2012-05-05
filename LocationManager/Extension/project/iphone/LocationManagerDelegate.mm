@@ -96,8 +96,6 @@ static LocationErrorCallback onErrorCB;
  }
  
 - (void)startUpdatingLocation {
-	//NSLog(@"LocationManagerDelegate startUpdatingLocation...");
-
     // Create the manager object 
     self.locationManager = [[[CLLocationManager alloc] init] autorelease];
     locationManager.delegate = self;
@@ -111,9 +109,6 @@ static LocationErrorCallback onErrorCB;
     
     // Once configured, the location manager must be "started".
     [locationManager startUpdatingLocation];
-    // Set a timeout for the locationUpdate
-    
-    //self.stateString = NSLocalizedString(@"Updating", @"Updating");
 }
 
 - (Location)CLLocation2Struct:(CLLocation *)clloc {
@@ -130,7 +125,6 @@ static LocationErrorCallback onErrorCB;
 	
 	return loc;
 	
-	
 }
 
 
@@ -140,7 +134,6 @@ static LocationErrorCallback onErrorCB;
  *      accuracy, or both together.
  */
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {    
-    //NSLog(@"LocationManagerDelegate didUpdateToLocation...");
  	
  	Location newLoc = [self CLLocation2Struct:newLocation];
  	Location oldLoc = [self CLLocation2Struct:oldLocation];
@@ -156,7 +149,6 @@ static LocationErrorCallback onErrorCB;
     
     //NSLog(@"LocationManagerDelegate didFailWithError.");
     
-    
     if ([error code] != kCLErrorLocationUnknown) {
     	onErrorCB("Error");
         [self stopUpdatingLocation:@"Error"];
@@ -168,13 +160,8 @@ static LocationErrorCallback onErrorCB;
 - (void)stopUpdatingLocation:(NSString *)state {
     self.stateString = state;
    
-	// We are cancelling the timeout
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(stopUpdatingLocation:) object:@"Timed Out"];
-    
     [locationManager stopUpdatingLocation];
     locationManager.delegate = nil;
-    
-    //NSLog(@"StopUpdatingLocation - Code %s", [state cStringUsingEncoding:NSUTF8StringEncoding]);
     
     onFinishedUpdatingCB([state cStringUsingEncoding:NSUTF8StringEncoding]);
 }

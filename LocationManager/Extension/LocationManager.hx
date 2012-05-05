@@ -14,14 +14,12 @@ class LocationManager {
 
 	public static function startUpdatingLocation(locationUpdateCB:Dynamic, finishedUpdatingCB:Dynamic, errorCB:Dynamic):Void {
 		#if cpp
-
-		_locUpdateCB = locationUpdateCB;
-		
-		if (finishedUpdatingCB == null) finishedUpdatingCB = onFinishedUpdatingDefaultCB;
-		if (errorCB == null) errorCB = onErrorDefaultCB;
-		
-		cpp_call_start_updating_location(onLocationUpdateDefaultCB, finishedUpdatingCB, errorCB);
-		//#else
+			_locUpdateCB = locationUpdateCB;
+			
+			if (finishedUpdatingCB == null) finishedUpdatingCB = onFinishedUpdatingDefaultCB;
+			if (errorCB == null) errorCB = onErrorDefaultCB;
+			
+			cpp_call_start_updating_location(onLocationUpdateDefaultCB, finishedUpdatingCB, errorCB);
 		#end	
 	}
 	
@@ -33,7 +31,6 @@ class LocationManager {
 	}
 	
 	public static function onLocationUpdateDefaultCB(newLocation:Dynamic, oldLocation:Dynamic):Void {
-		//trace("LocationManager Default callback - Location arrived to haxe - latitude reported: " + latitude + ", " + longitude);
 		
 		if (_locUpdateCB != null) _locUpdateCB(newLocation, oldLocation);
 		

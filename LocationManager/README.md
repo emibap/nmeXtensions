@@ -14,17 +14,17 @@ Reference the following iOS framework in your .nmml:
 
 LocationManager works in the following way:
 
-	After a startUpdatingLocation static call, the locationUpdate process begins and for every location update a callback is called, until a timeout is reached.
-	The duration of the process can be specified in the call.
-	There's also the possibility to stop the locationUpdate process by using the stopUpdatingLocation() static method.
+	After a startUpdatingLocation static call, the locationUpdate process begins and for every location update a callback is called.
+	The callback comes with 2 location objects, one for the new location and another for the previous one.
+
+	The process can be stopped by using the stopUpdatingLocation() static method. And if there's an error It will be notified by another callback.
 
 Just call this static Methods to use it:
     
-	LocationManager.startUpdatingLocation(totalTimer:Int = 30, locationUpdateCB:Dynamic, finishedUpdatingCB:Dynamic, errorCB:Dynamic)
+	LocationManager.startUpdatingLocation(locationUpdateCB:Dynamic, finishedUpdatingCB:Dynamic, errorCB:Dynamic)
 
 	Parameters:
 	-----------
-	totalTimer:Int - The desired time in seconds for the location
 	locationUpdateCB:Dynamic - A callback for each location update. Has 2 Float parameters for latitude and longitude.
 	finishedUpdatingCB:Dynamic - A callback that notifies when the location update has finished. Has a status String parameter.
 	errorCB:Dynamic - A callback that reports an error. Has a status String parameter.
@@ -47,16 +47,10 @@ Just call this static Methods to use it:
     haxelib run hxcpp Build.xml
     
     or
-    
-	haxelib run hxcpp Build.xml -DHXCPP_M64
 	haxelib run hxcpp Build.xml -Diphoneos
 	haxelib run hxcpp Build.xml -Diphoneos -DHXCPP_ARMV7
 	haxelib run hxcpp Build.xml -Diphonesim
-	haxelib run hxcpp Build.xml -Dwebos
-	haxelib run hxcpp Build.xml -Dandroid
-	haxelib run hxcpp Build.xml -Dblackberry
 	(depending on your target)
-    
 
 **License:**
 
@@ -86,5 +80,13 @@ This extension and example license:
 
 The extension includes a copy of some classes from Apple's [LocateMe sample][1] (see license information in the relevant
 files).
+The sample code also uses the [haxemaps][2] library (see license information in the relevant
+files).
+
+**IMPORTANT**
+If you use the sample code, dont't expect it to have the same functionality than a commercial GPS or Apple's Maps App.
+This code simply returns location updates and marks them a the map. For a more accurate usage of the Location API you should read something like [this][3].
 
 [1]: http://developer.apple.com/library/ios/#samplecode/LocateMe/Introduction/Intro.html
+[2]: http://code.google.com/p/haxemaps/
+[3]: http://stackoverflow.com/questions/1081219/optimizing-cllocationmanager-corelocation-to-retrieve-data-points-faster-on-the
