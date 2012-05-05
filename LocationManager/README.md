@@ -89,10 +89,8 @@ This extension and example license:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
 
-The extension includes a copy of some classes from Apple's [LocateMe sample][1] (see license information in the relevant
-files).
-The sample code also uses the [haxemaps][2] library (see license information in the relevant
-files).
+The extension includes a copy of some classes from Apple's [LocateMe sample][1] (see license information in the relevant files).
+The sample code also uses the [haxemaps][2] library (see license information in the relevant files). Maps implementation by Tony Polinelli (http://touchmypixel.com)
 
 **IMPORTANT**
 If you use the sample code, dont't expect it to have the same functionality than a commercial GPS or Apple's Maps App.
