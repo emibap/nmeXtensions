@@ -27,5 +27,11 @@ namespace locationManager {
 	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
 		return [locMan locationServicesEnabled];
     }
+    
+    bool headingAvailable() {
+	    LocationManagerDelegate* locMan = [LocationManagerDelegate sharedInstance];
+		return [locMan headingAvailable];
+    }
+
 
 }

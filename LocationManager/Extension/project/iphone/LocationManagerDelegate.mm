@@ -94,7 +94,11 @@ static LocationErrorCallback onErrorCB;
 - (bool) locationServicesEnabled {
 	return [CLLocationManager locationServicesEnabled] == YES;
 } 
-   
+
+- (bool) headingAvailable {
+	return [CLLocationManager headingAvailable] == YES;
+}
+
 - (void)setCallBacks:(LocationUpdateCallback)onLocUpdate finishedUpdatingCB:(FinishedUpdatingCallback)onFinishedUpdating errorCB:(LocationErrorCallback)onError {
 	
 	// Setting the callBacks

@@ -14,6 +14,7 @@ namespace locationManager {
 	void stopUpdatingLocation(const char *status);
 	int authorizationStatus();
 	bool locationServicesEnabled();
+	bool headingAvailable();
 }
 
 #endif

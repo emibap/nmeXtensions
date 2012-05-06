@@ -90,6 +90,11 @@ static value locationmanager_location_services_enabled() {
 }
 DEFINE_PRIM (locationmanager_location_services_enabled, 0);
 
+static value locationmanager_heading_available() {
+	return alloc_bool(headingAvailable());
+}
+DEFINE_PRIM (locationmanager_heading_available, 0);
+
 #endif
 
 

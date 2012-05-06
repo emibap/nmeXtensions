@@ -49,8 +49,10 @@ class LocationManagerSample extends Sprite {
 		2: Denied
 		3: Authorized
 		*/
-		trace("AuthorizationStatus: " + LocationManager.authorizationStatus());
-		trace("LocationServicesEnabled:: " + LocationManager.locationServicesEnabled());
+		log("AuthorizationStatus: " + LocationManager.authorizationStatus());
+		log("LocationServicesEnabled: " + LocationManager.locationServicesEnabled());
+		log("HeadingAvailable: " + LocationManager.headingAvailable());
+
 	}
 
 	
@@ -105,22 +107,20 @@ class LocationManagerSample extends Sprite {
 	
 		if (labelTxt.text.indexOf("start") != -1) {
 			LocationManager.startUpdatingLocation(onLocationUpdate, onFinishedUpdatingLocation, onFLocationError);
-			trace("- StartUpdatingLocation...");
-			statusTxt.text += "\n- StartUpdatingLocation...";
+			
+			log("- StartUpdatingLocation...");
 			labelTxt.text = "stop Updating Location";
 		} else {
 			LocationManager.stopUpdatingLocation();
-			trace("- StopUpdatingLocation...");
-			statusTxt.text += "\n- StopUpdatingLocation...";
+			
+			log("- StopUpdatingLocation...");
 			labelTxt.text = "start Updating Location";
 		}
 	}
 	
 	private function onLocationUpdate(newLoc:Dynamic, oldLoc:Dynamic):Void {
-		//trace("- Location arrived to haxe - latitude reported: " + newLoc.latitude + ", " + newLoc.longitude);
-		statusTxt.text += "\n- Location arrived: " + Std.string(newLoc.latitude) + ", " + Std.string(newLoc.longitude);
-		statusTxt.text += "\n- Location timestamp: " + Date.fromTime(newLoc.timestamp).toString();
-		statusTxt.scrollV = statusTxt.maxScrollV;
+		log("- Location arrived: " + Std.string(newLoc.latitude) + ", " + Std.string(newLoc.longitude));
+		log("- Location timestamp: " + Date.fromTime(newLoc.timestamp).toString());
 		
 		/**
 		* This is a list of all the properties of a Location Object:
@@ -148,16 +148,19 @@ class LocationManagerSample extends Sprite {
 	}
 	
 	private function onFinishedUpdatingLocation(status:String):Void {
-		trace("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!!!!!!!!!!!!!   Location finished Updating: " + status);
-		statusTxt.text += "\n- Location finished Updating: " + Std.string(status);
-		statusTxt.scrollV = statusTxt.maxScrollV;
-
+		log("- Location finished Updating: " + Std.string(status));
+		
 		labelTxt.text = "start Updating Location";
 	}
 	
 	private function onFLocationError(status:String):Void {
-		trace("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!!!!!!!!!!!!!   Location ERROR: " + status);
-		statusTxt.text += "\n- Location ERROR: " + Std.string(status);
+		log("- Location ERROR: " + Std.string(status));
+	}
+	
+	
+	private function log(s:String):Void {
+		trace("Log: " + s);
+		statusTxt.text += s + "\n";
 		statusTxt.scrollV = statusTxt.maxScrollV;
 	}
 	

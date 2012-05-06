@@ -79,4 +79,6 @@ typedef void (*LocationErrorCallback)(const char *);
 
 - (bool) locationServicesEnabled;
 
+- (bool) headingAvailable;
+
 @end

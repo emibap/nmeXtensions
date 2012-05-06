@@ -47,7 +47,16 @@ class LocationManager {
 		#end	
 	}
 
+	public static function headingAvailable():Bool {
+		#if cpp
+			return cpp_call_heading_available();
+		#else
+			return false;
+		#end	
+	}
+
 	
+
 
 	
 	
@@ -69,6 +78,7 @@ class LocationManager {
 	private static var cpp_call_stop_updating_location = Lib.load ("locationmanager", "locationmanager_stop_updating_location", 0);
 	private static var cpp_call_authorization_status = Lib.load ("locationmanager", "locationmanager_authorization_status", 0);
 	private static var cpp_call_location_services_enabled  = Lib.load ("locationmanager", "locationmanager_location_services_enabled", 0);
+	private static var cpp_call_heading_available  = Lib.load ("locationmanager", "locationmanager_heading_available", 0);
 	#end
 	
 }
