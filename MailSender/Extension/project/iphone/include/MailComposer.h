@@ -51,15 +51,11 @@
 
 @interface MailComposer : UIViewController <MFMailComposeViewControllerDelegate> 
 {
-	//IBOutlet UILabel *message;
 }
 
 + (MailComposer *)sharedInstance;
-//@property (nonatomic, retain) IBOutlet UILabel *message;
 
-//-(void)showPicker;
-//-(void)showPicker:(const char*)body sndTo:(const char*)to sndCC :(const char*)cc sndBCC:(const char*)bcc;
--(void)showPicker:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc;
+-(void)showPicker:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc attImgData:(NSData *)imgData;
 -(void)displayComposerSheet:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc;
 -(void)launchMailAppOnDevice;
 

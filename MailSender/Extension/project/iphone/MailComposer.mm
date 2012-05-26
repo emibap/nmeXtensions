@@ -61,8 +61,7 @@ static MailComposer *sharedInstance = nil;
 	return sharedInstance;
 }
 
--(void)showPicker:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc
-//-(void)showPicker
+-(void)showPicker:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc attImgData:(NSData *)imgData
 {
 	// This sample can run on devices running iPhone OS 2.0 or later  
 	// The MFMailComposeViewController class is only available in iPhone OS 3.0 or later. 
@@ -71,29 +70,21 @@ static MailComposer *sharedInstance = nil;
 	// We display an email composition interface if MFMailComposeViewController exists and the device can send emails.
 	// We launch the Mail application on the device, otherwise.
 	
-	
-	NSLog(@"Llaman a showPicker");
-	
 	Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
 	if (mailClass != nil)
 	{
 		// We must always check whether the current device is configured for sending emails
 		if ([mailClass canSendMail])
 		{
-			NSLog(@"puede mandar");
-			//NSLog(body);
-			//[self displayComposerSheet];
-			[self displayComposerSheet:subject msgBody:body msgIsHTML:isHTML sndTo:to sndCC:cc sndBCC:bcc];
+			[self displayComposerSheet:subject msgBody:body msgIsHTML:isHTML sndTo:to sndCC:cc sndBCC:bcc attImgData:imgData];
 		}
 		else
 		{
-			NSLog(@"no puede mandar");
 			[self launchMailAppOnDevice];
 		}
 	}
 	else
 	{
-		NSLog(@"No hay Clase de mail");
 		[self launchMailAppOnDevice];
 	}
 }
@@ -103,83 +94,48 @@ static MailComposer *sharedInstance = nil;
 #pragma mark Compose Mail
 
 // Displays an email composition interface inside the application. Populates all the Mail fields. 
--(void)displayComposerSheet:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc
+-(void)displayComposerSheet:(NSString *)subject msgBody:(NSString *)body msgIsHTML:(BOOL)isHTML sndTo:(NSString *)to sndCC:(NSString *)cc sndBCC:(NSString *)bcc attImgData:(NSData *)imgData
 {
-	
-	NSLog(@"displayComposerSheet");
-	
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	picker.mailComposeDelegate = self;
 	
-	//[picker setSubject:@"Hello from Buenos Aires!"];
-	NSLog(@"subject");
 	[picker setSubject:subject];
 	
-	NSLog(@"recipients");
 	// Set up recipients
-	//NSArray *toRecipients = [NSArray arrayWithObject:@"emibap@gmail.com"]; 
-	NSArray *toRecipients = [NSArray arrayWithObject:to]; 
-	//NSArray *ccRecipients = [NSArray arrayWithObjects:@"second@example.com", @"third@example.com", nil]; 
-	//NSArray *bccRecipients = [NSArray arrayWithObject:@"fourth@example.com"]; 
-	
-	[picker setToRecipients:toRecipients];
-	//[picker setCcRecipients:ccRecipients];	
-	//[picker setBccRecipients:bccRecipients];
-	
-	// Attach an image to the email
-	//NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
-    //NSData *myData = [NSData dataWithContentsOfFile:path];
-	//[picker addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
-	
-	NSLog(@"body");
-	NSLog(@"isHTML = %@", isHTML ? @"YES" : @"NO");
-	
+	if ([to length] > 0){
+		NSArray *toRecipients = [to componentsSeparatedByString:@","];
+		[picker setToRecipients:toRecipients];
+	}
+	if ([cc length] > 0){
+		NSArray *ccRecipients = [cc componentsSeparatedByString:@","];
+		[picker setCcRecipients:ccRecipients];
+	}
+	if ([bcc length] > 0){
+		NSArray *bccRecipients = [bcc componentsSeparatedByString:@","];
+		[picker setBccRecipients:bccRecipients];
+	}
+
 	// Fill out the email body text
-	//NSString *emailBody = @"Una masa las extensiones NME!";
-	NSString *emailBody = body;
-	[picker setMessageBody:emailBody isHTML:isHTML];
+	[picker setMessageBody:body isHTML:isHTML];
 	
-	//[self presentModalViewController:picker animated:YES];
-	
-	
+	// Attach an image to the email (if present)
+	if (imgData != NULL) {
+		[picker addAttachmentData:imgData mimeType:@"image/png" fileName:@"route"];
+	}
+
+	NSLog(@"llegue hasta aca...");
 	id rootVC = [[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0] nextResponder];
 	[rootVC presentModalViewController:picker animated:YES];
 	
-	//[[[[UIApplication sharedApplication] keyWindow] rootViewController] presentModalViewController:picker animated:YES];
     [picker release];
 }
 
 
-// Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
+// Dismisses the email composition interface when users tap Cancel or Send.
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error 
 {	
-	//message.hidden = NO;
-	// Notifies users about errors associated with the interface
-	//switch (result)
-	//{
-	//	case MFMailComposeResultCancelled:
-	//		message.text = @"Result: canceled";
-	//		break;
-	//	case MFMailComposeResultSaved:
-	//		message.text = @"Result: saved";
-	//		break;
-	//	case MFMailComposeResultSent:
-	//		message.text = @"Result: sent";
-	//		break;
-	//	case MFMailComposeResultFailed:
-	//		message.text = @"Result: failed";
-	//		break;
-	//	default:
-	//		message.text = @"Result: not sent";
-	//		break;
-	//}
-	//[self dismissModalViewControllerAnimated:YES];
-	
-	NSLog(@"animo mail out");
 	id rootVC = [[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0] nextResponder];
 	[rootVC dismissModalViewControllerAnimated:YES];
-	
-	//[[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
 }
 
 
@@ -189,7 +145,7 @@ static MailComposer *sharedInstance = nil;
 // Launches the Mail application on the device.
 -(void)launchMailAppOnDevice
 {
-	
+	//TODO...
 	NSLog(@"launchMailAppOnDevice");
 	
 	NSString *recipients = @"mailto:first@example.com?cc=second@example.com,third@example.com&subject=Hello from California!";
@@ -207,10 +163,9 @@ static MailComposer *sharedInstance = nil;
 
 - (void)viewDidUnload 
 {
-	NSLog(@"viewDidUnload");
+	//NSLog(@"viewDidUnload");
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-	//self.message = nil;
 }
 
 #pragma mark -
@@ -218,8 +173,7 @@ static MailComposer *sharedInstance = nil;
 
 - (void)dealloc 
 {
-	NSLog(@"dealloc");
-    //[message release];
+	//NSLog(@"dealloc");
 	[super dealloc];
 }
 

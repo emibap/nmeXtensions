@@ -1,6 +1,7 @@
 **Haxe NME MailSender extension**
 
 This is a native extension for haxe NME which allows to call a native mail window.
+Supports setting the subject, body, recipients and also an embedded image.
 (Currently iOS only)
 
 **Usage**
@@ -8,7 +9,6 @@ This is a native extension for haxe NME which allows to call a native mail windo
 Reference the extension in your .nmml:
 
     <include path="path/to/MailSender/Extension" />
-    
 
 Reference the following iOS framework in your .nmml:
 
@@ -16,16 +16,17 @@ Reference the following iOS framework in your .nmml:
 
 Just call this static Method:
     
-    MailSender.sendMail("MailSender sendMail sample", "Howdy, partner\n", false, "youremail@gmail.com", "youremail@gmail.com", "youremail@gmail.com");
+    MailSender.sendMail("MailSender sendMail sample", "Howdy, partner\n", false, ["youremail@gmail.com","another@email"], ["youremailCC@gmail.com"], ["youremailBCC@gmail.com"], optionalBmd);
 	
 	Parameters:
 	-----------
-	subject:String
-	body:String
-	isHTML:Boolean
-	to:String
-	cc:String
-	bcc:String
+	subject:String (default "")
+	body:String (default "")
+	isHTML:Boolean (default true)
+	to:Array<String> - pass null if you don't wish to set this parameter
+	cc:Array<String> - pass null if you don't wish to set this parameter
+	bcc:Array<String> - pass null if you don't wish to ser this parameter
+	attImg:BitmapData - Optional image to be embedded at the end of the email. Pass null or skip it if you wish.
 
 
 **Running the test application**

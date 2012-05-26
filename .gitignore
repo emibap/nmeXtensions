@@ -1,6 +1,7 @@
 LocationManager/Project/Export/*
 LocationManager/Extension/project/obj/*
 MailSender/Project/Export/*
+MailSender/Project/mailsendersample.build
 MailSender/Extension/project/obj/*
 ImageSaver/Project/Export/*
 ImageSaver/Extension/project/obj/*
