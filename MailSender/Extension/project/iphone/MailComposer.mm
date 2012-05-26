@@ -123,7 +123,6 @@ static MailComposer *sharedInstance = nil;
 		[picker addAttachmentData:imgData mimeType:@"image/png" fileName:@"route"];
 	}
 
-	NSLog(@"llegue hasta aca...");
 	id rootVC = [[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0] nextResponder];
 	[rootVC presentModalViewController:picker animated:YES];
 	
