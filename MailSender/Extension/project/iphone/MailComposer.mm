@@ -58,6 +58,9 @@ static MailComposer *sharedInstance = nil;
 	{
 		sharedInstance = [[MailComposer alloc] init];
 	}
+	
+	NSLog(@"get sharedInstance");
+	
 	return sharedInstance;
 }
 
@@ -135,6 +138,13 @@ static MailComposer *sharedInstance = nil;
 {	
 	id rootVC = [[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0] nextResponder];
 	[rootVC dismissModalViewControllerAnimated:YES];
+	NSLog(@"didFinishWithResult");
+	controller.mailComposeDelegate = nil;
+	//[controller release];
+	[sharedInstance release];
+	rootVC = nil;
+	sharedInstance = nil;
+	
 }
 
 
@@ -162,7 +172,7 @@ static MailComposer *sharedInstance = nil;
 
 - (void)viewDidUnload 
 {
-	//NSLog(@"viewDidUnload");
+	NSLog(@"viewDidUnload");
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
@@ -172,7 +182,7 @@ static MailComposer *sharedInstance = nil;
 
 - (void)dealloc 
 {
-	//NSLog(@"dealloc");
+	NSLog(@"dealloc");
 	[super dealloc];
 }
 
